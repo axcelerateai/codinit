@@ -26,4 +26,4 @@ def test_initialize():
 
 
 if __name__=='__main__':
-    test_setup()
+    test_initialize()
