@@ -1,5 +1,5 @@
-import importlib
 import argparse
+import importlib
 import json
 import math
 import os
@@ -8,7 +8,6 @@ import subprocess
 import types
 
 import codinit.utils as utils
-
 
 # ======================================================================
 # Config

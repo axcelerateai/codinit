@@ -1,11 +1,11 @@
-import sys
 import random
+import sys
 
-import codinit.name as name
 import codinit.config_utils as config_utils
-import codinit.wandb_utils as wandb_utils
 import codinit.logger as logger
+import codinit.name as name
 import codinit.utils as utils
+import codinit.wandb_utils as wandb_utils
 
 try:
     import wandb

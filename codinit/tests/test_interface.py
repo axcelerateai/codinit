@@ -1,9 +1,11 @@
 import argparse
 
-from codinit import initialize
-import codinit.logger as logger
+import wandb
 
-def test_setup():
+from codinit import initialize, logger
+
+
+def test_initialize():
     parser = argparse.ArgumentParser()
     parser.add_argument('--arg_1', type=str)
     parser.add_argument('--arg_2', type=int, default=1)
@@ -11,11 +13,11 @@ def test_setup():
     parser.add_argument('--arg_4', '-a4', type=float, default=0.)
     parser.add_argument('--arg_5', '-a5', action='store_true')
 
-    config, _ = initialize(parser)
+    initialize(parser)
 
     # Can't really test with pytest, so just print
     if __name__=='__main__':
-        print(config)
+        print(wandb.config)
         logger.record('ABC/abc', 10)
         logger.record('ABC/def', 20)
         logger.record('DEF/abc', 11)

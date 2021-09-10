@@ -1,6 +1,6 @@
+import json
 import os
 import pickle
-import json
 
 # =====================================================================
 # File handlers
