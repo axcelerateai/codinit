@@ -26,3 +26,10 @@ if __name__=='__main__':
     logger.record('DEF/def', 21)
     logger.dump(step=0)
 ```
+
+To install:
+```shell
+git clone https://github.com/shehryar-malik/codinit
+cd codinit
+pip install -e codinit
+```
