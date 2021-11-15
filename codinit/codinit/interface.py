@@ -57,6 +57,7 @@ def initialize(
         - project: W&B project
         - group: W&B group
         - seed: seed to set
+        - base_dir: base directory to store everything (defaults to ./wandb)
     """
     if wandb_kwargs is None:
         wandb_kwargs = {}
@@ -94,6 +95,7 @@ def initialize(
             project=config.get('project', None),
             name=config.get('name', None),
             group=config.get('group', None),
+            dir=config.get('base_dir', './wandb'),
             config=config,
             **wandb_kwargs
     )
