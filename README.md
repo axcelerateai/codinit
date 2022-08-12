@@ -31,5 +31,5 @@ To install:
 ```shell
 git clone https://github.com/shehryar-malik/codinit
 cd codinit
-pip install -e codinit
+pip install -e .
 ```
